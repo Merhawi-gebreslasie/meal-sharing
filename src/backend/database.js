@@ -18,4 +18,4 @@ knex.raw("SELECT VERSION()").then(() => {
   console.log(`connection to db successful!`);
 });
 
-module.exports = knex;
+module.exports = knex; 
