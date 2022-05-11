@@ -1,0 +1,51 @@
+.nave{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.nave div.img{
+    width: 36px;
+    height: 36px;
+    margin: 15px;
+}
+.nave-lists  {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+    list-style:none;
+
+}
+.nave .nave-lists li{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 8px;
+
+    
+
+    text-align: center;
+    
+}
+.nave-lists li:hover{
+    background-color: #525257;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+    
+
+}
+img{
+    width: 40px;
+    height: 36px;
+    margin :20px 10px
+}
+.logo{
+    display: flex;
+}
+.logo div{
+    margin-top: 30px;
+    font-size: 30px;
+}

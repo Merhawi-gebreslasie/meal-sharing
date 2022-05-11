@@ -1,0 +1,28 @@
+.main-footer{
+    color: white;
+    background-color: rgb(97, 96, 120);
+    padding-top: 3em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1px;
+    
+
+}
+.raw{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}
+.main-footer a:hover{
+    background-color: rgb(226, 198, 43);
+    transition: all .2s ease-in-out;
+    color: white;
+    font-weight: bold;
+}
