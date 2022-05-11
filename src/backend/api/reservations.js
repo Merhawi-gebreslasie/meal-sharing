@@ -20,10 +20,10 @@ router.post("/", async (req, res) => {
       meal_id: req.body.meal_id,
       created_date: req.body.created_date,
     };
-    const result= await knex("reservation").insert(reservationToAdd);
+    const result = await knex("reservation").insert(reservationToAdd);
     res.json(result);
   } catch (error) {
-    throw new Error("something went wrong with adding meal");
+    throw new Error("something went wrong with adding reservation");
   }
 });
 

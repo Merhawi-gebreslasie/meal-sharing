@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
     const result = await knex("review").insert(reviewToAdd);
     res.json(result);
   } catch (error) {
-    throw new Error("something went wrong with adding meal");
+    throw new Error("something went wrong with adding review");
   }
 });
 
@@ -40,7 +40,7 @@ router.get("/:id", async (req, res) => {
     });
     res.send(reviewById);
   } catch (error) {
-    throw new Error("Something went wrong with getting reservation by id");
+    throw new Error("Something went wrong with getting review by id");
   }
 });
 
@@ -57,7 +57,7 @@ router.put("/:id", async (req, res) => {
       .update({ title: req.body.title });
     res.json(reviewToUpdate);
   } catch (error) {
-    throw new Error("something went wrong ,can not update reservation");
+    throw new Error("something went wrong ,can not update review");
   }
 });
 
