@@ -17,9 +17,7 @@ function MealsPage() {
   }, []);
   const getMeals = async () => {
     try {
-      const response = await fetch(
-        "https://hyf-meal-sharing-app-project.herokuapp.com//api/meals"
-      );
+      const response = await fetch("/api/meals");
       const results = await response.json();
 
       setMeals(results);
@@ -37,7 +35,7 @@ function MealsPage() {
       price: meal.price,
       created_date: meal.created_date,
     };
-    fetch("https://hyf-meal-sharing-app-project.herokuapp.com//api/meals", {
+    fetch("/api/meals", {
       method: "POST",
       headers: {
         "content-type": "application/json",

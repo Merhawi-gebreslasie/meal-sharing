@@ -13,9 +13,7 @@ function MealList() {
   const getResult = async () => {
     setLoading(true);
     try {
-      const response = await fetch(
-        "https://hyf-meal-sharing-app-project.herokuapp.com//api/meals"
-      );
+      const response = await fetch("/api/meals");
       const result = await response.json();
       console.log(result);
       setMeals(result);

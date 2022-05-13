@@ -27,9 +27,7 @@ function ReserveForSpecificMeal() {
 
   const getmealById = async () => {
     try {
-      const response = await fetch(
-        `https://hyf-meal-sharing-app-project.herokuapp.com//api/meals/${ID}`
-      );
+      const response = await fetch(`/api/meals/${ID}`);
       const result = await response.json();
 
       setMeals(result);
