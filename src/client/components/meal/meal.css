@@ -1,0 +1,54 @@
+
+form.create-meal{
+    
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138,137,137);
+}
+form.create-meal input.title,
+form.create-meal textarea{
+
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+    border-radius: 8px;
+}
+form.create-meal p.error{
+    font-size: 1.2em;
+    color:red;
+}
+
+ul.meals-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0;
+    list-style: none;
+    height: calc(100vh - 20px);
+    width: calc(100vw - 20px);
+
+
+}
+ul.meals-list li{
+    background-color:rgba(152, 203, 234,0.6);
+    margin: 10px;
+    width: 150px;
+    height: 120px;
+    padding: 7px;
+    border-radius: 7px;
+
+
+}
+ul.meals-list li div.meal-price{
+    display: flex;
+    justify-content: space-around;
+}

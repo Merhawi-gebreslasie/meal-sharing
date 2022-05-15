@@ -1,3 +1,21 @@
 * {
     box-sizing: border-box;
 }
+.page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://images.pexels.com/photos/1415734/pexels-photo-1415734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+}
+.content-wrap{
+    flex: 1;
+}
+  
+  @media screen and (max-width: 750px) {
+    #root {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  

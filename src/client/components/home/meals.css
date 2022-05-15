@@ -1,0 +1,11 @@
+div.title,div.subtitle{
+
+    text-align: center;
+}
+.meals-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
